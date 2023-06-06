@@ -1,0 +1,24 @@
+<div class="border rounded-lg p-4">
+    <h1 class="text-xl font-bold" >Paciente: </h1> <em class="text-xl" >{{name}}</em>
+    <h1 class="text-xl font-bold" >Dni: </h1> <em class="text-xl" >{{dni}}</em>
+    <hr>
+      <div class="mt-4">
+        <h1 class="text-sm">
+          Se ha finalizado la comprobación de la secuencia mutante, a continuacion los resultados:
+        </h1>
+
+      <div class="text-center mt-3">
+        <ng-container *ngIf="getCheck; else noFound">
+          <span class="text-xl block">Mutación encontrada</span>
+          <h1 class="text-xl" >Secuencia: </h1> <span class="text-xl font-bold"><ng-container *ngFor="let item of sequence">{{item}}</ng-container>
+          </span>
+          
+        </ng-container>
+        <ng-template #noFound>
+          <span class="text-xl">No se encontro mutación</span>
+        </ng-template>
+      </div>
+
+    </div>
+    
+</div>

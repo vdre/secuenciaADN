@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'animate.css';
+
+.text-primary-color{
+    color: #cf2e2e;
+}
+
+.bg-primary-color{
+    background: #cf2e2e;
+}
+
+.p-dialog{
+    border-radius: 0.5rem !important;
+}
+
+.p-dialog .p-dialog-header {
+    background: #cf2e2e !important;
+    color: #fff !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+    color: #fff !important;
+}
